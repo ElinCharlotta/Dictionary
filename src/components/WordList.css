@@ -1,0 +1,67 @@
+h3 {
+    margin-top: 0;
+}
+
+.error-container {
+    padding: 1.25rem;
+    background-color: #f8d7da;
+    border: 0.5rem solid #f5c6cb;
+    border-radius: 0.5rem;
+    color: #721c24;
+    text-align: center;
+    margin: 1.25rem;
+}
+
+.error-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.error-message {
+    font-size: 1.2rem;
+}
+
+.error-resolution {
+    font-style: italic;
+}
+
+.word-list {
+    padding: 0;
+}
+
+.word-item {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.phonetic-item {
+    border-radius: 0.3125rem;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+
+.meaning-item {
+    border-radius: 0.3125rem;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+
+.definition-item {
+    background-color: #f0f8ff;
+    border-radius: 0.3125rem;
+    padding: 1rem;
+    margin-top: 0.3125rem;
+    max-width: 30rem;
+}
+
+
+.action-button {
+    border: none;
+    font-size: 1rem;
+    margin-left: auto;
+    padding: 0;
+    font-size: 1.5rem;
+}

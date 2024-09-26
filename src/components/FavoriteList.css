@@ -1,0 +1,46 @@
+.favorites-word-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0;
+}
+
+.word-item-favorites {
+    border-radius: 0.5rem;
+    padding: 0rem 0.5rem 0.8rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.3125rem;
+    width: 100%;
+}
+
+.definition-item-favorites {
+    border-radius: 0.3125rem;
+    padding: 1rem;
+    margin-top: 0.3125rem;
+}
+
+.phonetic-item-favorites {
+    border-radius: 0.3125rem;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+
+.meaning-item-favorites {
+    background-color: #fff3e6;
+    border-radius: 0.3125rem;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+
+.favorites-action-button {
+    padding: 0.3125rem;
+    background-color: transparent;
+    margin-left: auto;
+}

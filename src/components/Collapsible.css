@@ -1,0 +1,15 @@
+.card{
+    flex-direction: column;
+    width: 100%;
+}
+.collapsible-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f8ff;
+
+    width: 100%;
+
+
+}

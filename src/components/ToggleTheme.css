@@ -1,0 +1,33 @@
+
+.switch {
+  position: relative;
+  width: 60px; 
+  height: 30px; 
+  background-color: #39315a; 
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.switch input {
+  opacity: 0; 
+  width: 0;
+  height: 0;
+}
+
+.switch .bulb {
+  position: absolute;
+  top: 3px; 
+  left: 3px; 
+  width: 24px; 
+  height: 24px; 
+  background-color: #190c29; 
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+.switch input:checked + label .bulb {
+  transform: translateX(30px); 
+  background-color: #c5bfdd;
+}
+
