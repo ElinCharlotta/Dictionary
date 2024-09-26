@@ -1,4 +1,4 @@
-import { render, screen, waitFor, within } from "@testing-library/react";
+import { getByRole, render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { HttpResponse, http } from "msw";
 import { setupServer } from "msw/node";
@@ -49,6 +49,26 @@ test("should render Dictionary header, searchbar and searchButton on load", () =
     ).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /search/i })).toBeInTheDocument();
 });
+
+test("should toggle theme between light and dark", async () => {
+    render(<App />);
+    const user = userEvent.setup();
+    const toggleThemeButton = screen.getByRole("checkbox");
+
+    expect(toggleThemeButton).toBeInTheDocument();
+    expect(document.body.getAttribute('data-theme')).toBe('light');
+  
+    const searchButton = screen.getByRole("button", { name: /search/i });
+    expect(searchButton).toBeInTheDocument();
+    expect(searchButton).toHaveStyle('background-color: rgb(197, 191, 221)');
+   
+    await user.click(toggleThemeButton);
+    expect(document.body.getAttribute('data-theme')).toBe('dark');
+
+    expect(screen.getByRole("button", { name: /search/i })).toBeInTheDocument();
+    expect(searchButton).toHaveStyle('background-color: rgb(46, 26, 71)');
+});
+
 
 describe("Search bar handling", () => {
     test("should render WordList component with word details after a successful search", async () => {

@@ -2,89 +2,99 @@
 [data-theme="light"] {
   background-color: #e4e1f0;
   color: #3d3636; 
+}
 
-  .search-input {
-    background-color: #c5bfdd;
-    color: #3d3636; 
-  }
+[data-theme="light"] .search-input {
+  background-color: #c5bfdd;
+  color: #3d3636; 
+}
 
-  .search-button {
-    background-color: #c5bfdd; 
-    color: #3d3636; 
-  }
+[data-theme="light"] .search-button {
+  background-color: #c5bfdd; 
+  color: #3d3636; 
+}
 
-  .action-button, .favorites-action-button {
-    background-color: transparent;
-    color: #3d3636; 
-  }
-  .collapsible-button {
-    color: #3d3636;
-    background-color:  #e4e1f0;
-  }
+[data-theme="light"] .action-button,
+[data-theme="light"] .favorites-action-button {
+  background-color: transparent;
+  color: #3d3636; 
+}
 
-  .word-item, .word-item-favorites {
-    background-color: #c5bfdd;; 
-    color: #3d3636; 
-  }
+[data-theme="light"] .collapsible-button {
+  color: #3d3636;
+  background-color:  #e4e1f0;
+}
 
-  .phonetic-item, .phonetic-item-favorites {
-    background-color: #cdc7e8; 
-    color: #3d3636;
-  }
+[data-theme="light"] .word-item,
+[data-theme="light"] .word-item-favorites {
+  background-color: #c5bfdd;
+  color: #3d3636; 
+}
 
-  .meaning-item, .meaning-item-favorites {
-    background-color: #e4e1f0;
-    color: #3d3636;
-  }
+[data-theme="light"] .phonetic-item,
+[data-theme="light"] .phonetic-item-favorites {
+  background-color: #cdc7e8; 
+  color: #3d3636;
+}
 
-  .definition-item, .definition-item-favorites {
-    background-color: #c5bfdd;
-    color: #3d3636;
-  }
+[data-theme="light"] .meaning-item,
+[data-theme="light"] .meaning-item-favorites {
+  background-color: #e4e1f0;
+  color: #3d3636;
+}
+
+[data-theme="light"] .definition-item,
+[data-theme="light"] .definition-item-favorites {
+  background-color: #c5bfdd;
+  color: #3d3636;
 }
 
 /* Dark Theme */
 [data-theme="dark"] {
   background-color: #190c29;
   color: #e0e0e0;
+}
 
-  .search-input {
-    background-color: #2b2a2c;
-    border-color: #2e1a47;
-    color: #e0e0e0;
-  }
+[data-theme="dark"] .search-input {
+  background-color: #2b2a2c;
+  border-color: #2e1a47;
+  color: #e0e0e0;
+}
 
-  .search-button {
-    background-color: #2e1a47;
-    color: #e0e0e0;
-  }
+[data-theme="dark"] .search-button {
+  background-color: #2e1a47;
+  color: #e0e0e0;
+}
 
-  .action-button {
-    background-color:transparent;
-    color: #e0e0e0;
-  }
-  .favorites-action-button{
-    color: #e0e0e0;
-  }
+[data-theme="dark"] .action-button {
+  background-color: transparent;
+  color: #e0e0e0;
+}
 
-  .word-item, .word-item-favorites {
-    background-color: #2e1a47;
-    border-color: #2e1a47;
-  }
+[data-theme="dark"] .favorites-action-button {
+  color: #e0e0e0;
+}
 
-  .meaning-item, .meaning-item-favorites {
-    background-color: #190c29;
-    border-color: #2e1a47;
-  }
+[data-theme="dark"] .word-item,
+[data-theme="dark"] .word-item-favorites {
+  background-color: #2e1a47;
+  border-color: #2e1a47;
+}
 
-  .definition-item, .definition-item-favorites  {
-    background-color: #2e1a47;
-    border-color: #322245;
-  }
+[data-theme="dark"] .meaning-item,
+[data-theme="dark"] .meaning-item-favorites {
+  background-color: #190c29;
+  border-color: #2e1a47;
+}
 
-  .phonetic-item, .phonetic-item-favorites {
-    background-color: #190c29;
-    border-color: #2e1a47;
-  }
+[data-theme="dark"] .definition-item,
+[data-theme="dark"] .definition-item-favorites {
+  background-color: #2e1a47;
+  border-color: #322245;
+}
 
+[data-theme="dark"] .phonetic-item,
+[data-theme="dark"] .phonetic-item-favorites {
+  background-color: #190c29;
+  border-color: #2e1a47;
 }

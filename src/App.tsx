@@ -16,7 +16,7 @@ export default function App() {
     } | null>(null);
     const [favorites, setFavorites] = useState<Word[]>([]);
     const [theme, setTheme] = useState<"dark" | "light">(
-        () => (sessionStorage.getItem("theme") as "dark" | "light") || "dark"
+        () => (sessionStorage.getItem("theme") as "dark" | "light") || "light"
     );
 
     const fetchWords = async (searchTerm: string) => {
