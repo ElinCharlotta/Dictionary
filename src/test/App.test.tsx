@@ -1,10 +1,9 @@
-import { getByRole, render, screen, waitFor, within } from "@testing-library/react";
+import { render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { HttpResponse, http } from "msw";
 import { setupServer } from "msw/node";
 import App from "../App";
 
-// kolla att tema fungerar, kolla några klasser. light dark
 const server = setupServer(
     http.get("https://api.dictionaryapi.dev/api/v2/entries/en/hello", () => {
         return HttpResponse.json([
@@ -56,19 +55,18 @@ test("should toggle theme between light and dark", async () => {
     const toggleThemeButton = screen.getByRole("checkbox");
 
     expect(toggleThemeButton).toBeInTheDocument();
-    expect(document.body.getAttribute('data-theme')).toBe('light');
-  
+    expect(document.body.getAttribute("data-theme")).toBe("light");
+
     const searchButton = screen.getByRole("button", { name: /search/i });
     expect(searchButton).toBeInTheDocument();
-    expect(searchButton).toHaveStyle('background-color: rgb(197, 191, 221)');
-   
+    expect(searchButton).toHaveStyle("background-color: rgb(197, 191, 221)");
+
     await user.click(toggleThemeButton);
-    expect(document.body.getAttribute('data-theme')).toBe('dark');
+    expect(document.body.getAttribute("data-theme")).toBe("dark");
 
     expect(screen.getByRole("button", { name: /search/i })).toBeInTheDocument();
-    expect(searchButton).toHaveStyle('background-color: rgb(46, 26, 71)');
+    expect(searchButton).toHaveStyle("background-color: rgb(46, 26, 71)");
 });
-
 
 describe("Search bar handling", () => {
     test("should render WordList component with word details after a successful search", async () => {
@@ -238,7 +236,7 @@ describe("handle favorites", () => {
                 expect(
                     within(favoritesList).queryByText(
                         "used as a greeting or to begin a phone conversation.",
-                        { selector: ".definition-item-favorites p" } 
+                        { selector: ".definition-item-favorites p" }
                     )
                 ).not.toBeInTheDocument()
             );

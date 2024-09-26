@@ -1,39 +1,39 @@
 /* Light Theme */
 [data-theme="light"] {
   background-color: #e4e1f0;
-  color: #3d3636; 
+  color: #3d3636;
 }
 
 [data-theme="light"] .search-input {
   background-color: #c5bfdd;
-  color: #3d3636; 
+  color: #3d3636;
 }
 
 [data-theme="light"] .search-button {
-  background-color: #c5bfdd; 
-  color: #3d3636; 
+  background-color: #c5bfdd;
+  color: #3d3636;
 }
 
 [data-theme="light"] .action-button,
 [data-theme="light"] .favorites-action-button {
   background-color: transparent;
-  color: #3d3636; 
+  color: #3d3636;
 }
 
 [data-theme="light"] .collapsible-button {
   color: #3d3636;
-  background-color:  #e4e1f0;
+  background-color: #e4e1f0;
 }
 
 [data-theme="light"] .word-item,
 [data-theme="light"] .word-item-favorites {
   background-color: #c5bfdd;
-  color: #3d3636; 
+  color: #3d3636;
 }
 
 [data-theme="light"] .phonetic-item,
 [data-theme="light"] .phonetic-item-favorites {
-  background-color: #cdc7e8; 
+  background-color: #cdc7e8;
   color: #3d3636;
 }
 

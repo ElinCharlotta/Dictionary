@@ -1,7 +1,8 @@
-.card{
+.card {
     flex-direction: column;
     width: 100%;
 }
+
 .collapsible-button {
     display: flex;
     flex-direction: row;
