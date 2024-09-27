@@ -5,9 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 interface WordListProps {
     words: Word[];
-    onAddToFavorites: (word: Word) => void;
+    onAddToFavorites: (word: Word) => void; // Funktion för att hantea att kunna lägga till ett ord i favoriter
 }
 
+
+// WordList-komponenten som visar en lista av ord
 export default function WordList({ words, onAddToFavorites }: WordListProps) {
     return (
         <ul className="word-list">
@@ -45,6 +47,7 @@ export default function WordList({ words, onAddToFavorites }: WordListProps) {
                             </div>
                         ))}
                     <strong>Meaning:</strong>
+                     {/* Rendera betydelser för det aktuella ordet */}
                     {wordData.meanings.map((meaning, index) => (
                         <div
                             key={meaning.partOfSpeech + index}

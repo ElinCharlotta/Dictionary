@@ -10,17 +10,16 @@ import "./Collapsible.css";
 
 interface FavoritesListProps {
     favorites: Word[];
-    onRemoveFromFavorites: (word: Word) => void;
+    onRemoveFromFavorites: (word: Word) => void; // Funktion för att hantera borttagning av ord från favoriter
 }
+
+// FavoritesList-komponenten som visar en lista av favoritord
 
 export default function FavoritesList({
     favorites,
     onRemoveFromFavorites,
 }: FavoritesListProps) {
-    useEffect(() => {
-        console.log("Favorites updated:", favorites);
-    }, [favorites]);
-
+    // Kontrollera om det finns några favoriter
     if (favorites.length === 0) {
         return <div>No favorites</div>;
     }
